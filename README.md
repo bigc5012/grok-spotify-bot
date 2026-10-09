@@ -1,6 +1,6 @@
 # grok-spotify-bot
 
-Chat control for Spotify, built for a Grok Bot you talk to from the car. It covers the things a car's Spotify app (e.g. Tesla's) can't: add or remove the song that's playing from a specific playlist, move it between playlists, undo, build a playlist on request, clean up a playlist, and queue or play music on the car.
+Chat control for Spotify, built for Tesla owners using a Grok Bot from their Tesla. **Requires Spotify Premium.** It covers the things the Tesla Spotify app can't: add or remove the song that's playing from a specific playlist, move it between playlists, undo, build a playlist on request, clean up a playlist, and queue or play music on your Tesla.
 
 It's one Python 3 script (`spotify.py`), standard library only. No pip installs.
 
@@ -45,7 +45,7 @@ Playlist names match loosely (case-insensitive, partial). `liked` means Liked So
 | `devices`, `history` | Online devices, recent plays |
 | `login` | One-time sign-in |
 
-**Device choice** (play/resume/queue/shuffle, unless `--device <name>` is given): the active device. If none is active, the only online device; if several are online, a single Tesla or car device (name/type contains "tesla", or type Automobile). Otherwise it lists the devices and asks.
+**Device choice** (play/resume/queue/shuffle, unless `--device <name>` is given): the active device. If none is active, the only online device; if several are online, the Tesla (name/type contains "tesla", or type Automobile). Otherwise it lists the devices and asks.
 
 ## Spotify limits (development mode, 2026)
 
@@ -53,7 +53,7 @@ Playlist names match loosely (case-insensitive, partial). `liked` means Liked So
 - Search returns at most 10 results per page.
 - Songs can be listed or edited only in playlists you own or collaborate on.
 - Spotify has no skip-history API. `cleanup` estimates skips from your last 50 plays (a play much shorter than the song) plus skips made with this script's `next`.
-- Playback control needs Premium and an online device (open Spotify in the car).
+- Playback control needs Premium and an online device (open Spotify on your Tesla's screen).
 
 ## License
 
