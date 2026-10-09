@@ -1,0 +1,8 @@
+# Personal Spotify sign-in and local state: never commit
+.spotify_tokens.json
+*.spotify_tokens.json
+.spotify_undo.json
+.spotify_skips.json
+*.tmp
+.env
+__pycache__/
