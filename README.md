@@ -1,5 +1,7 @@
 # grok-spotify-bot
 
+**Get the bot:** import the [Tesla DJ Grok Bot template](https://x.ai/bot/7eNHk3dIdqm41qsqQxUKd). It sets everything up for you, including this script.
+
 Chat control for Spotify, built for Tesla owners using a Grok Bot from their Tesla. **Requires Spotify Premium.** It covers the things the Tesla Spotify app can't: add or remove the song that's playing from a specific playlist, move it between playlists, undo, build a playlist on request, clean up a playlist, and queue or play music on your Tesla.
 
 It's one Python 3 script (`spotify.py`), standard library only. No pip installs.
